@@ -1,7 +1,7 @@
 /**
  *   返回间隔最小的ints中两个元素和为s的元素组成的数组
  *   @param  {array}   ints 输入数组
- *   @param  {int}   s    和
+ *   @param  {int}     s    和
  *   @return {array}        返回的数组
  *   @create 2015-03-24
  *   @update 2015-03-24
