@@ -5,9 +5,18 @@
  *   @create 2015-03-26
  *   @update 2015-03-26
  */
+//mine
 function sortDict(dict) {
 	return Object.keys(dict).map(function(v) {
 		return [isNaN(v) ? [v, dict[v]] : [Number(v), dict[v]]];
+	}).sort(function(a, b) {
+		return b[1] - a[1];
+	});
+}
+//better
+function sortDict(dict) {
+	return Object.keys(dict).map(function(v) {
+		return [+v || v, dict[v]]; //利用‘||’的返回值
 	}).sort(function(a, b) {
 		return b[1] - a[1];
 	});
